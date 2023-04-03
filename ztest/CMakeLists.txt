@@ -7,8 +7,8 @@ if (TARGET tinyusb_device)
     target_link_libraries(ztest pico_stdlib)
 
     # enable usb output, disable uart output
-    pico_enable_stdio_usb(ztest 1)
-    pico_enable_stdio_uart(ztest 0)
+    pico_enable_stdio_usb(ztest 0)
+    pico_enable_stdio_uart(ztest 1)
 
     # create map/bin/hex file etc.
     pico_add_extra_outputs(ztest)

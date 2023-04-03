@@ -39,6 +39,11 @@ int main() {
 
     // Send out a string, with CR/LF conversions
     uart_puts(UART_ID, " Hello, UART!\n");
+
+    while (true) {
+        printf("Hello, uart!\n");
+        sleep_ms(1000);
+    }
 }
 
 /// \end::hello_uart[]
